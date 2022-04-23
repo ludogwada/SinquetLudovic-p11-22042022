@@ -2,14 +2,14 @@ import { NavLink } from "react-router-dom"
 
 function Card({cover,title}) {
     return(
-        <div className="card">
-            <NavLink to='/'>
-                <img src={cover} alt="location" />
+        <NavLink to='/'>
+            <div className="card">
+                <img src={cover} alt="location" className="card__img" />
                 <div className="card__titre">
                     <h3>{title}</h3>
                 </div>
-            </NavLink>
-        </div>
+            </div>
+        </NavLink>
     )
 }
 

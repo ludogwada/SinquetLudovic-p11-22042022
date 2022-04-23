@@ -462,6 +462,32 @@ p {
   margin-top: -19px;
 }
 
+.card {
+  width: 340px;
+  height: 340px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card__img {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.card__titre {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  align-items: flex-end;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -492,7 +518,6 @@ p {
   width: 100%;
   height: 200px;
   background-color: #000000;
-  position: absolute;
   bottom: 0;
 }
 .footer__logo {
@@ -501,9 +526,21 @@ p {
   height: 39.44px;
 }
 
-.app {
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #f6f6f6;
   margin-left: 100px;
   margin-right: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 50px;
+  padding-right: 40px;
+  padding-top: 6px;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .error {
