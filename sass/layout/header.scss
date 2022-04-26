@@ -19,5 +19,11 @@
         margin-left: 57px;
         text-decoration: none;
 
+        &.active{
+            text-decoration: underline;
+            -webkit-text-decoration-color: $colorPink;
+                    text-decoration-color: $colorPink;
+        }
+
     }
 }

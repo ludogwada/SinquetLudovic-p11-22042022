@@ -1,0 +1,25 @@
+.collapse{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    &__title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: $colorPink;
+        cursor: pointer;
+    }
+
+    &__description{
+        padding-top: 3%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        background-color: $colorBackground;
+    }
+}
