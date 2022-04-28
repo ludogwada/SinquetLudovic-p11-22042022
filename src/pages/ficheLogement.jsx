@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import Collapse from "../components/Collapse/collapse";
+import Rating from "../components/rating/Rating";
 import ListHebergement from '../data/Liste-hebergement.json'
  
 
@@ -25,7 +26,8 @@ function Fiche() {
                 <h4>{hebergement.location}</h4>
                 <div>{hebergement.tags}</div>
                 <div>{hebergement.host.name}{hebergement.host.picture}</div>
-                <div>{hebergement.rating}</div>
+                <Rating
+                    rating={hebergement.rating} />
                 <Collapse
                     title= 'description'
                     description={hebergement.description} />

@@ -10,7 +10,8 @@ function Home(){
 return(
     <main>
         <Banner
-            image={image} />
+            image={image}
+            title='Chez vous, partout et ailleurs' />
         <article className='cardsContainer'>
             {
             ListHebergement.map( hebergement => {
