@@ -1,4 +1,6 @@
-function Banner({image, title}) {
+function Banner(props) {
+    const { image, title} = props
+
     return(
         <article className="banner">
             <img src={image} alt="paysage" className='banner__img'/>;

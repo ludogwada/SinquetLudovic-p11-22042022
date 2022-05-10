@@ -5,15 +5,13 @@ function Rating(props) {
 
     let content = []
 
-    if(props.rating < 5){
         for (let i = 0; i < props.rating; i++) {
             content.push(<img key={`key${i}`} src={starPink} alt='star' />)
         }
         for (let i = props.rating; i < 5; i++) {
             content.push(<img key={`key${i}`} src={star} alt='star' />)
         }
-    }
-
+    
     return ( 
         <span className='rating'>
             {content}

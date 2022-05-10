@@ -1,4 +1,6 @@
-function Card({cover,title}) {
+function Card(props) {
+    const {cover, title} = props
+
     return(
         <article className="card">
                 <img src={cover} alt="location" className="card__img" />

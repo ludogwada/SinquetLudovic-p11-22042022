@@ -3,8 +3,9 @@ import arrow from '../../assets/Vector.svg'
 import arrowUp from '../../assets/VectorUp.svg'
 import { useState } from 'react'
 
-function Collapse({title, description}){
+function Collapse(props){
 
+    const { title, description } =props
     const [expanded, setExpanded] = useState(false)
 
     return(

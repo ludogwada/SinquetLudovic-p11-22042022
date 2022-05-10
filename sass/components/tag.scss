@@ -1,0 +1,22 @@
+.tags {
+    display: flex;
+
+    &__tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 115px;
+        height: 25px;
+        margin-right: 10px;
+        background-color: $colorPink;
+        border-radius: 10px;
+
+            &__title {
+            font-size: 14px;
+            color: $colorWhite;
+            line-height: 19.96px;
+            font-weight: 500;
+            }
+     }
+      
+    }

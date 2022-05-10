@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import Collapse from "../components/Collapse/collapse";
-import Rating from "../components/rating/Rating";
+import Host from "../components/Host/host";
+import Rating from "../components/rating/rating";
+import Slider from "../components/slider/slider";
+import Tag from "../components/Tag/tag";
 import ListHebergement from '../data/Liste-hebergement.json'
  
 
@@ -20,21 +23,33 @@ function Fiche() {
     
     return(
         <main>
-            <section>
-                <img src={hebergement.cover} alt="cover" />
+            <section className="cardLocation">
+                <Slider
+                    pictures={hebergement.pictures}
+                    title={hebergement.title} />
                 <h2>{hebergement.title}</h2>
                 <h4>{hebergement.location}</h4>
-                <div>{hebergement.tags}</div>
-                <div>{hebergement.host.name}{hebergement.host.picture}</div>
+                <Tag
+                    tags={hebergement.tags} />
+                <Host 
+                    name={hebergement.host.name}
+                    picture={hebergement.host.picture}/>
                 <Rating
                     rating={hebergement.rating} />
-                <Collapse
-                    title= 'description'
-                    description={hebergement.description} />
-                <Collapse
-                    title= 'equipement'
-                    description={hebergement.equipments} />
-                    
+                <section className="cardLocation__collapse">
+                    <section className="cardLocation__collapse__description">
+                        <Collapse
+                            title= 'Description'
+                            description={hebergement.description} />
+                    </section>
+                    <section className="cardLocation__collapse__equipement">
+                        <Collapse
+                            title= 'Equipement'
+                            description={hebergement.equipments.map((equipment, index) =>
+                            (<li key={index}>{equipment}</li>))} />
+                    </section>
+                </section>
+                   
 
             </section>
         </main>
