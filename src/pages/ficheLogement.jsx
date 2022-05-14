@@ -27,15 +27,22 @@ function Fiche() {
                 <Slider
                     pictures={hebergement.pictures}
                     title={hebergement.title} />
-                <h2>{hebergement.title}</h2>
-                <h4>{hebergement.location}</h4>
-                <Tag
-                    tags={hebergement.tags} />
-                <Host 
-                    name={hebergement.host.name}
-                    picture={hebergement.host.picture}/>
-                <Rating
-                    rating={hebergement.rating} />
+                <section className="cardLocation__titleHost">
+                    <section>
+                        <h2>{hebergement.title}</h2>
+                        <h4>{hebergement.location}</h4>
+                    </section>
+                    <Host 
+                        name={hebergement.host.name}
+                        picture={hebergement.host.picture}/>
+                </section>
+                
+                <section className="cardLocation__tagRating">
+                    <Tag
+                        tags={hebergement.tags} />
+                    <Rating
+                        rating={hebergement.rating} />
+                </section>
                 <section className="cardLocation__collapse">
                     <section className="cardLocation__collapse__description">
                         <Collapse

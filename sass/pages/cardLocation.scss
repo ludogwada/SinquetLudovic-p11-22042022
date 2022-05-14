@@ -2,14 +2,27 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
     @include margin;
 
-
+    &__titleHost{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    
+    &__tagRating{
+        display: flex;
+        justify-content: space-between;
+    }
+    
     &__collapse{
         display: flex;
         justify-content: space-between;
         width: 100%;
-       
+        margin-top: 24px;
 
         &__description{
             width: 45%;
@@ -27,7 +40,13 @@
         overflow: hidden;
         &__title{
             border-radius: 10px;
-
+        }
+        h5{
+            font-size: 18px;
+        }
+        h6{
+            font-size: 18px;
+            line-height: 25.67px;
         }
     }   
 }

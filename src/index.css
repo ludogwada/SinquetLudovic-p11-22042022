@@ -500,6 +500,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 70%;
+  height: 100%;
 }
 .collapse__title {
   display: flex;
@@ -518,6 +519,8 @@ p {
   padding-right: 2%;
   padding-bottom: 2%;
   background-color: #f7f7f7;
+  list-style-type: none;
+  height: 100%;
 }
 
 .slider {
@@ -583,6 +586,7 @@ p {
 .host {
   display: flex;
   justify-content: right;
+  align-items: center;
 }
 .host__name {
   display: flex;
@@ -696,13 +700,26 @@ p {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
   margin-left: 100px;
   margin-right: 100px;
+}
+.cardLocation__titleHost {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.cardLocation__tagRating {
+  display: flex;
+  justify-content: space-between;
 }
 .cardLocation__collapse {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 24px;
 }
 .cardLocation__collapse__description {
   width: 45%;
@@ -718,6 +735,13 @@ p {
 }
 .cardLocation .collapse__title {
   border-radius: 10px;
+}
+.cardLocation .collapse h5 {
+  font-size: 18px;
+}
+.cardLocation .collapse h6 {
+  font-size: 18px;
+  line-height: 25.67px;
 }
 
 /*# sourceMappingURL=index.css.map */
