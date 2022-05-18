@@ -6,7 +6,10 @@ function Error() {
         <main>
             <article className="error">
                 <span className="error__text">404</span>
-                <h2>Oups! La page que vous demandez n'existe pas.</h2>
+                <span className="error__text__oups">
+                    <h2>Oups! La page que vous demandez n'existe pas.</h2>
+                </span>
+                
             </article> 
             <article className="redirection" >
                 <Link to="/">

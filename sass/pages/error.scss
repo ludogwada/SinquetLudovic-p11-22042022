@@ -6,6 +6,8 @@
     margin-top: 70px;
     margin-left: 100px;
     margin-right: 100px; 
+    text-align: center;
+
     
     &__text{
         font-size: 288px;
@@ -24,5 +26,27 @@
        
     &__h4{
         text-decoration: underline;
+    }
+}
+@media screen and (max-width: 720px) {
+    .error{
+        &__text{
+            font-size: 150px;
+        }
+    }
+}
+@media screen and (max-width: 630px) {
+    .error{
+        @include marginMobile;
+        margin-top: 180px;
+        margin-bottom: 100px;
+        &__text{
+            font-size: 96px;
+            line-height: 136.9px;
+            margin-bottom: 11px;
+            &__oups{
+                width: 260px;
+            }
+        }
     }
 }

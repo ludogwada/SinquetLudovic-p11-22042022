@@ -50,3 +50,45 @@
         }
     }   
 }
+
+@media screen and (max-width: 630px) {
+    .cardLocation{
+        @include marginMobile;
+        &__titleHost{
+           flex-direction: column; 
+           margin-top: 15px;
+        }
+        &__tagRating{
+            flex-direction: column;
+            margin-top: -88px;
+        }
+        &__collapse{
+            flex-direction: column;
+            &__description{
+                width: 100%;
+            }
+            &__equipement{
+                width: 100%;
+            }
+        }
+        .collapse{
+            border-radius: 5px;
+            &__title{
+                border-radius: 5px;
+            }
+            h5{
+                font-size: 13px;
+                line-height: 18.54px;
+            }
+            h6{
+                font-size: 12px;
+                line-height: 17.11px;
+                font-weight: 400;
+            }
+
+        }
+        
+    }
+
+}
+    

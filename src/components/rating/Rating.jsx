@@ -6,10 +6,10 @@ function Rating(props) {
     let content = []
 
         for (let i = 0; i < props.rating; i++) {
-            content.push(<img key={`key${i}`} src={starPink} alt='star' />)
+            content.push(<img key={`key${i}`} src={starPink} alt='star' className='rating__starPink' />)
         }
         for (let i = props.rating; i < 5; i++) {
-            content.push(<img key={`key${i}`} src={star} alt='star' />)
+            content.push(<img key={`key${i}`} src={star} alt='star' className='rating__star' />)
         }
     
     return ( 

@@ -1,17 +1,44 @@
+.homeBanner{
+    @include margin;
+    margin-top: 50px;
+    border-radius: 25px;
+    background-color: $colorBlack;
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+}
 .cardsContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     background-color: $colorGreyLight;
     @include margin;
     margin-top: 40px;
     margin-bottom: 40px;
     padding-bottom: 50px;
-    padding-right: 40px;
     padding-top: 6px;
     overflow: hidden;
     border-radius: 25px;
 
 }
+@media screen and (max-width: 630px) {
+    .homeBanner{
+        position: relative;
+        overflow: hidden;
+        height: 111px;
+        width: auto;
+        border-radius: 10px;
+        margin-top: 16px;
+        @include marginMobile;
 
+    }
+    .cardsContainer{
+
+        background-color: transparent;
+        margin-top: 22px;
+        margin-bottom: 22px;
+        padding: 0;
+        border-radius: 0px;
+        @include marginMobile;
+    }    
+}

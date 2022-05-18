@@ -1,7 +1,56 @@
+.aboutBanner{
+    @include margin;
+    margin-top: 50px;
+    border-radius: 25px;
+    background-color: $colorBlack;
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+}
+
 .about{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    &__collapse{
+        width: 70%;
+        margin-bottom: 31px;
+        border-radius: 5px;
+    }
+    .collapse__description{
+        padding-bottom: 3%;
+    }
+}
+@media screen and (max-width: 630px) {
+    .aboutBanner{
+        position: relative;
+        overflow: hidden;
+        height: 223px;
+        margin-top: 17px;
+        border-radius: 10px;
+        min-width: 250px;
+        @include marginMobile;
+    }
+    .about{
+        @include marginMobile;
+
+        &__collapse{
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .collapse__description{
+            padding-bottom: 3%;
+        }
+    }
+
+    h5{
+        font-size: 13px;
+        line-height: 18.54px;
+    }
+    h6{
+        font-weight: 400;
+    }
+    
 }

@@ -19,3 +19,17 @@
            object-fit: cover;
     }
 }
+@media screen and (max-width: 630px) {
+    .host{
+        padding-top: 50px;
+        &__name{
+            font-size: 12px;
+            line-height: 17.11px;
+            width: 80px;
+        }
+        &__picture{
+            height: 32px;
+            width: 32px;
+        }
+    }
+}

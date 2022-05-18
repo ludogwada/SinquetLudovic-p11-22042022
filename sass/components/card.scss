@@ -3,7 +3,6 @@
     height: 340px;
     margin-top: 50px;
     margin-left: 50px;
-    margin-right: 10px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -16,7 +15,7 @@
         height: 100%;
     }
 
-    &__titre {
+    &__title {
         display: flex;
         padding: 20px;
         width: 100%;
@@ -25,5 +24,21 @@
         align-items: flex-end;
         
 
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .card{
+        width: 335px;
+        height: 255px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+
+        &__title{
+            width: 70%;
+            padding-bottom: 15px;
+        }
     }
 }

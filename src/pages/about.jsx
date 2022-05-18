@@ -9,15 +9,19 @@ import '../index.css'
 function About(){
     return(
         <main>
-            <Banner
-                image={image} />
+            <article className='aboutBanner'>
+                <Banner
+                    image={image} />
+            </article>
             <article className='about'>
                 {APropos.map((collapse, index) => {
                     return(
-                    <Collapse 
-                        key={index}
-                        title={collapse.title}
-                        description= {collapse.description}/>
+                        <article className='about__collapse'>
+                            <Collapse 
+                                key={index}
+                                title={collapse.title}
+                                description= {collapse.description}/>
+                        </article>
                     )
                     })}
             </article>    

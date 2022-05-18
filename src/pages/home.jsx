@@ -8,7 +8,9 @@ import { NavLink } from 'react-router-dom';
 function Home() {
 	return (
 		<main>
-			<Banner image={image} title='Chez vous, partout et ailleurs' />
+			<article className='homeBanner'>
+				<Banner image={image} title='Chez vous, partout et ailleurs' />
+			</article>
 			<article className='cardsContainer'>
 				{ListHebergement.map((hebergement) => {
 

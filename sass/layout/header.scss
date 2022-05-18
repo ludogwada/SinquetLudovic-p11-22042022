@@ -12,6 +12,7 @@
         height: 68px;
     }
 }
+
 .nav{
     display: flex;
     
@@ -26,4 +27,30 @@
         }
 
     }
+}
+    
+@media screen and (max-width: 720px) {
+    .header{
+        &__logo{
+            width: 145px;
+            height: 47px;
+        }
+    }
+    
+}
+@media screen and (max-width: 630px) {
+    .header{
+        justify-content: space-between;
+        margin-top: 20px;
+        @include marginMobile;
+        h6{
+            text-transform: uppercase;
+        }
+    }
+    .nav{
+        &__li{
+            margin-left: 10px;
+        }
+    }
+    
 }

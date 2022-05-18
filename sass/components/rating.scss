@@ -1,0 +1,15 @@
+@media screen and (max-width: 630px) {
+    .rating{
+        margin-top: 25.5px;
+        &__starPink{
+            height: 15px;
+            width: 15px;
+            margin-left: 5px;
+        }
+        &__star{
+            height: 15px;
+            width: 15px;
+            margin-left: 5px;
+        }
+    }
+}

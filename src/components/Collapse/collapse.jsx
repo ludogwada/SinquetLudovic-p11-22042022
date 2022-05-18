@@ -13,7 +13,7 @@ function Collapse(props){
             <header className='collapse__title' onClick={()=> setExpanded(!expanded)}>
                 <h5>{title}</h5>
                 <span onClick={() => setExpanded(!expanded)}>
-          {expanded ? <img src={arrow} alt="arrow down" /> : <img src={arrowUp} alt="arrow up"/>}
+          {expanded ? <img src={arrow} alt="arrow down" className='collapse__title__arrowDown'/> : <img src={arrowUp} alt="arrow up" className='collapse__title__arrowUp'/>}
         </span>
             </header>
             {expanded &&

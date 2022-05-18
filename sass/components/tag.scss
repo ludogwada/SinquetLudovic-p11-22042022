@@ -4,12 +4,17 @@
     &__tag {
         display: flex;
         align-items: center;
+        text-align: center;
         justify-content: center;
         width: 115px;
         height: 25px;
         margin-right: 10px;
         background-color: $colorPink;
         border-radius: 10px;
+
+            p{
+                line-height: 8px;
+            }
 
             &__title {
             font-size: 14px;
@@ -18,5 +23,19 @@
             font-weight: 500;
             }
      }
-      
-    }
+}
+
+    @media screen and (max-width: 630px) {
+        .tags{
+            &__tag{
+                height: 18px;
+                width: 84px;
+                &__title{
+                    text-align: center;
+                    font-size: 10px;
+                    line-height: 8px;
+                }
+            }
+
+        }
+    }      

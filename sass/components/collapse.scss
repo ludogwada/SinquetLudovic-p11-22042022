@@ -1,9 +1,8 @@
 .collapse{
     display: flex;
     flex-direction: column;
-    width: 70%;
     height: 100%;
-
+    
     &__title{
         display: flex;
         flex-direction: row;
@@ -14,15 +13,36 @@
         padding-right: 2%;
         background-color: $colorPink;
         cursor: pointer;
+        border-radius: 5px;
     }
 
     &__description{
         padding-top: 3%;
         padding-left: 2%;
         padding-right: 2%;
-        padding-bottom: 2%;
         background-color: $colorBackground;
         list-style-type: none;
+        border-radius: 5px;
         height: 100%;
     }
+}
+@media screen and (max-width: 630px) {
+    .collapse{
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        &__title{
+            height: 30px;
+            &__arrowUp{
+                height: 8.96px;
+                width: 15.20px;
+            }
+            &__arrowDown{
+                height: 8.96px;
+                width: 15.20px;
+            }
+        }
+    }
+    
 }

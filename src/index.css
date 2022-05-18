@@ -442,15 +442,49 @@ p {
   color: #FF6060;
 }
 
-.banner {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
-  border-radius: 25px;
-  background-color: #000000;
-  height: 225px;
-  position: relative;
-  overflow: hidden;
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  h5 {
+    font-size: 22px;
+  }
+
+  h6 {
+    font-size: 18px;
+    line-height: 17.11px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 630px) {
+  h1 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 25.67px;
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 19.96px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
 }
 .banner__img {
   position: absolute;
@@ -460,7 +494,7 @@ p {
   height: 100%;
   width: 100%;
 }
-.banner__titre {
+.banner__title {
   display: flex;
   width: 100%;
   height: 225px;
@@ -468,14 +502,24 @@ p {
   justify-content: center;
   align-items: center;
   margin-top: -19px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
+@media screen and (max-width: 630px) {
+  .banner__title {
+    display: block;
+    height: 100%;
+    margin-top: 0;
+    text-align: left;
+    width: 77%;
+  }
+}
 .card {
   width: 340px;
   height: 340px;
   margin-top: 50px;
   margin-left: 50px;
-  margin-right: 10px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -487,7 +531,7 @@ p {
   width: 100%;
   height: 100%;
 }
-.card__titre {
+.card__title {
   display: flex;
   padding: 20px;
   width: 100%;
@@ -496,10 +540,23 @@ p {
   align-items: flex-end;
 }
 
+@media screen and (max-width: 630px) {
+  .card {
+    width: 335px;
+    height: 255px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .card__title {
+    width: 70%;
+    padding-bottom: 15px;
+  }
+}
 .collapse {
   display: flex;
   flex-direction: column;
-  width: 70%;
   height: 100%;
 }
 .collapse__title {
@@ -512,17 +569,37 @@ p {
   padding-right: 2%;
   background-color: #FF6060;
   cursor: pointer;
+  border-radius: 5px;
 }
 .collapse__description {
   padding-top: 3%;
   padding-left: 2%;
   padding-right: 2%;
-  padding-bottom: 2%;
   background-color: #f7f7f7;
   list-style-type: none;
+  border-radius: 5px;
   height: 100%;
 }
 
+@media screen and (max-width: 630px) {
+  .collapse {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .collapse__title {
+    height: 30px;
+  }
+  .collapse__title__arrowUp {
+    height: 8.96px;
+    width: 15.2px;
+  }
+  .collapse__title__arrowDown {
+    height: 8.96px;
+    width: 15.2px;
+  }
+}
 .slider {
   display: flex;
   justify-content: center;
@@ -563,18 +640,44 @@ p {
   color: #ffffff;
 }
 
+@media screen and (max-width: 630px) {
+  .slider__container {
+    height: 255px;
+    min-width: 335px;
+    border-radius: 10px;
+  }
+  .slider__leftArrow {
+    height: 19.8px;
+    width: 11.67px;
+    top: 45%;
+    left: 6px;
+  }
+  .slider__rightArrow {
+    height: 19.8px;
+    width: 11.67px;
+    top: 45%;
+    right: 6px;
+  }
+  .slider__nbPhoto {
+    display: none;
+  }
+}
 .tags {
   display: flex;
 }
 .tags__tag {
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
   width: 115px;
   height: 25px;
   margin-right: 10px;
   background-color: #FF6060;
   border-radius: 10px;
+}
+.tags__tag p {
+  line-height: 8px;
 }
 .tags__tag__title {
   font-size: 14px;
@@ -583,6 +686,17 @@ p {
   font-weight: 500;
 }
 
+@media screen and (max-width: 630px) {
+  .tags__tag {
+    height: 18px;
+    width: 84px;
+  }
+  .tags__tag__title {
+    text-align: center;
+    font-size: 10px;
+    line-height: 8px;
+  }
+}
 .host {
   display: flex;
   justify-content: right;
@@ -603,6 +717,35 @@ p {
   object-fit: cover;
 }
 
+@media screen and (max-width: 630px) {
+  .host {
+    padding-top: 50px;
+  }
+  .host__name {
+    font-size: 12px;
+    line-height: 17.11px;
+    width: 80px;
+  }
+  .host__picture {
+    height: 32px;
+    width: 32px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .rating {
+    margin-top: 25.5px;
+  }
+  .rating__starPink {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+  }
+  .rating__star {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+  }
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -630,6 +773,27 @@ p {
   text-decoration-color: #FF6060;
 }
 
+@media screen and (max-width: 720px) {
+  .header__logo {
+    width: 145px;
+    height: 47px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .header {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .header h6 {
+    text-transform: uppercase;
+  }
+
+  .nav__li {
+    margin-left: 10px;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -646,23 +810,59 @@ p {
   height: 39.44px;
 }
 
+@media screen and (max-width: 630px) {
+  .footer {
+    padding-bottom: 50px;
+  }
+}
+.homeBanner {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  border-radius: 25px;
+  background-color: #000000;
+  height: 225px;
+  position: relative;
+  overflow: hidden;
+}
+
 .cardsContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   background-color: #f6f6f6;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-bottom: 50px;
-  padding-right: 40px;
   padding-top: 6px;
   overflow: hidden;
   border-radius: 25px;
 }
 
+@media screen and (max-width: 630px) {
+  .homeBanner {
+    position: relative;
+    overflow: hidden;
+    height: 111px;
+    width: auto;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .cardsContainer {
+    background-color: transparent;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    padding: 0;
+    border-radius: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 .error {
   display: flex;
   flex-direction: column;
@@ -671,6 +871,7 @@ p {
   margin-top: 70px;
   margin-left: 100px;
   margin-right: 100px;
+  text-align: center;
 }
 .error__text {
   font-size: 288px;
@@ -688,6 +889,38 @@ p {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 720px) {
+  .error__text {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .error {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 180px;
+    margin-bottom: 100px;
+  }
+  .error__text {
+    font-size: 96px;
+    line-height: 136.9px;
+    margin-bottom: 11px;
+  }
+  .error__text__oups {
+    width: 260px;
+  }
+}
+.aboutBanner {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  border-radius: 25px;
+  background-color: #000000;
+  height: 225px;
+  position: relative;
+  overflow: hidden;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -695,7 +928,48 @@ p {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.about__collapse {
+  width: 70%;
+  margin-bottom: 31px;
+  border-radius: 5px;
+}
+.about .collapse__description {
+  padding-bottom: 3%;
+}
 
+@media screen and (max-width: 630px) {
+  .aboutBanner {
+    position: relative;
+    overflow: hidden;
+    height: 223px;
+    margin-top: 17px;
+    border-radius: 10px;
+    min-width: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .about {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about__collapse {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .about .collapse__description {
+    padding-bottom: 3%;
+  }
+
+  h5 {
+    font-size: 13px;
+    line-height: 18.54px;
+  }
+
+  h6 {
+    font-weight: 400;
+  }
+}
 .cardLocation {
   display: flex;
   flex-direction: column;
@@ -742,6 +1016,45 @@ p {
 .cardLocation .collapse h6 {
   font-size: 18px;
   line-height: 25.67px;
+}
+
+@media screen and (max-width: 630px) {
+  .cardLocation {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .cardLocation__titleHost {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .cardLocation__tagRating {
+    flex-direction: column;
+    margin-top: -88px;
+  }
+  .cardLocation__collapse {
+    flex-direction: column;
+  }
+  .cardLocation__collapse__description {
+    width: 100%;
+  }
+  .cardLocation__collapse__equipement {
+    width: 100%;
+  }
+  .cardLocation .collapse {
+    border-radius: 5px;
+  }
+  .cardLocation .collapse__title {
+    border-radius: 5px;
+  }
+  .cardLocation .collapse h5 {
+    font-size: 13px;
+    line-height: 18.54px;
+  }
+  .cardLocation .collapse h6 {
+    font-size: 12px;
+    line-height: 17.11px;
+    font-weight: 400;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
