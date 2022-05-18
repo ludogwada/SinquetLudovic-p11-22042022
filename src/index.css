@@ -677,7 +677,7 @@ p {
   border-radius: 10px;
 }
 .tags__tag p {
-  line-height: 8px;
+  line-height: 10px;
 }
 .tags__tag__title {
   font-size: 14px;
@@ -830,6 +830,7 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   background-color: #f6f6f6;
   margin-left: 100px;
   margin-right: 100px;
@@ -837,6 +838,7 @@ p {
   margin-bottom: 40px;
   padding-bottom: 50px;
   padding-top: 6px;
+  padding-right: 50px;
   overflow: hidden;
   border-radius: 25px;
 }
